@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-   const element = document.getElementById("ci-socials-8");
+   // Replace the [your element ID] with your actiual element ID on your website.
+   const element = document.getElementById("[your element ID]");
    let lastScrollTop = 0;
 
    function toggleSocials() {
+
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const isMobile = window.innerWidth <= 768;
 
-      if (isMobile) {
-         element.classList.remove("visible");
-         return;
-      }
-
+      // You can adjust the value "175" based on your preferences. 
       if (scrollTop > lastScrollTop && scrollTop > 175) {
          // Scrolling down
          element.classList.add("visible");
